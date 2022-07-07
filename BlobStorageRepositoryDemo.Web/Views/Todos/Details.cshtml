@@ -1,0 +1,14 @@
+@model BlobStorageRepositoryDemo.Models.Todo
+@{
+    ViewData["Title"] = $"Todo - {Model.Title}";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@Html.DisplayForModel()
+
+<div>
+    <a asp-action="Index">Back to List</a> | 
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> | 
+    <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+</div>

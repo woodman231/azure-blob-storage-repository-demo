@@ -1,0 +1,17 @@
+@model BlobStorageRepositoryDemo.Models.Todo
+@{
+    ViewData["Title"] = $"Delete Todo - {Model.Title}?";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@Html.DisplayForModel()
+
+<form asp-action="ConfirmDelete" method="post">
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.Title)
+    @Html.HiddenFor(m => m.Description)
+    @Html.HiddenFor(m => m.Completed)
+    <a asp-action="Index">Back to List</a>
+    <input class="btn btn-danger" type="submit" value="Confirm" />
+</form>

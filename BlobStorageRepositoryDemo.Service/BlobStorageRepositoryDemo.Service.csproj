@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlobStorageRepositoryDemo.Models\BlobStorageRepositoryDemo.Models.csproj" />
+    <ProjectReference Include="..\BlobStorageRepositoryDemo.Repository\BlobStorageRepositoryDemo.Repository.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

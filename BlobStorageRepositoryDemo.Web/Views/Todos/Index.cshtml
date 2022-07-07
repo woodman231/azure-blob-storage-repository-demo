@@ -1,0 +1,38 @@
+@model IEnumerable<BlobStorageRepositoryDemo.Models.Todo>
+@{
+    ViewData["Title"] = "Todos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a class="btn btn-primary" asp-action="Create">Create</a>
+
+@if(Model is not null) {
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>                
+                <th>Completed</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var todoItem in Model) {
+                <tr>
+                    <td>@todoItem.Title</td>
+                    @if(todoItem.Completed) {
+                        <td>True</td>
+                    }
+                    else {
+                        <td>False</td>
+                    }
+                    <td>
+                        <a asp-action="Details" asp-route-id="@todoItem.Id">Details</a> | 
+                        <a asp-action="Edit" asp-route-id="@todoItem.Id">Edit</a> | 
+                        <a asp-action="Delete" asp-route-id="@todoItem.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

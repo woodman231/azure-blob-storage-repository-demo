@@ -1,0 +1,14 @@
+@model BlobStorageRepositoryDemo.Models.Todo
+@{
+    ViewData["Title"] = "Create Todo";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    @Html.EditorForModel()
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
