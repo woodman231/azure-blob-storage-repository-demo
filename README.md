@@ -2,7 +2,7 @@
 Azure Blob Storage Using the Repsoitory Pattern
 
 Companion Article
-- [ASP.NET Core - Azure Blobg Storage - Repository Pattern]([https://www.intertech.com/asp-net-core-how-to-use-azure-app-configuration-and-key-vault-for-development-and-production/](https://www.intertech.com/asp-net-core-azure-blob-storage-repository-pattern/))
+- [ASP.NET Core - Azure Blobg Storage - Repository Pattern](https://www.intertech.com/asp-net-core-azure-blob-storage-repository-pattern/)
 
 Related Articles:
 - [ASP.NET Core - Azure Table Storage - Repository Pattern](https://www.intertech.com/asp-net-core-azure-table-storage-repository-pattern/)
